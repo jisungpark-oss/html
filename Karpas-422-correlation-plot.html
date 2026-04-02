@@ -13,7 +13,8 @@
     .search-box { position: relative; }
     .search-input { padding: 12px 15px; width: 350px; border: none; border-radius: 6px; font-size: 15px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); }
     .main-layout { display: flex; flex: 1; padding: 20px; gap: 20px; overflow: hidden; }
-    #plot-area { flex: 3; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 10px; display: flex; align-items: center; justify-content: center; }
+    #plot-area {flex: 3; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 10px; display: block;  /* changed from flex */
+  min-width: 0;    /* critical for flex children */}
     #side-panel { flex: 1; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 25px; overflow-y: auto; display: flex; flex-direction: column; }
     .gene-card { background: #f8fafc; border: 1px solid #e2e8f0; border-left: 8px solid #ff4b4b; padding: 20px; border-radius: 8px; animation: fadeIn 0.3s ease-out; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
